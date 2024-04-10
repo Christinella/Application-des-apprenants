@@ -20,9 +20,9 @@ class Database
         $this->connexionDB();
 
         $host = 'localhost';
-        $dbname = 'application';
-        $user = 'application';
-        $password = 'application';
+        $dbname = 'gda';
+        $user = 'gda';
+        $password = 'gda';
 
         try {
             $this->pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
@@ -55,7 +55,7 @@ class Database
     {
 
         // Vérifier si la base de données est vide
-        if ($this->testIfTableResaExists()) {
+        if ($this->testIfTableCoursExists()) {
             return "La base de données semble déjà remplie.";
             die();
         }
@@ -80,11 +80,11 @@ class Database
      * Vérifie si la table Resa existe déjà dans la BDD
      * @return bool
      */
-    private function testIfTableResaExists(): bool
+    private function testIfTableCoursExists(): bool
     {
-        $existant = $this->DB->query('SHOW TABLES FROM ' . DB_NAME . ' LIKE \'cours\'')->fetch();
+        $existant = $this->DB->query('SHOW TABLES FROM ' . DB_NAME . ' LIKE \'Cours\'')->fetch();
 
-        if ($existant !== false && $existant[0] == "cours") {
+        if ($existant !== false && $existant[0] == "Cours") {
             return true;
         } else {
             return false;
@@ -103,7 +103,9 @@ class Database
     define('DB_NAME', '" . DB_NAME . "');
     define('DB_USER', '" . DB_USER . "');
     define('DB_PWD', '" . DB_PWD . "');
- 
+    define('PREFIXE', '" . "');
+
+    define('HOME_URL', '" . HOME_URL . "');
     
     // Ne pas toucher :
     
