@@ -1,10 +1,12 @@
 <?php
-
-define('DB_HOST', 'application');
-define('DB_NAME', 'application');
-define('DB_USER', 'application');
-define('DB_PWD', 'application');
-
-define('HOME_URL', '/');
-
-define('DB_INITIALIZED', TRUE);
+    // lors de la mise en open source, remplacer les infos concernant la base de données.
+    
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'application');
+    define('DB_USER', 'application');
+    define('DB_PWD', 'application');
+ 
+    
+    // Ne pas toucher :
+    
+    define('DB_INITIALIZED', TRUE);
