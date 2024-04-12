@@ -5,7 +5,8 @@
     define('DB_NAME', 'application');
     define('DB_USER', 'application');
     define('DB_PWD', 'application');
- 
+
+
     
     // Ne pas toucher :
     

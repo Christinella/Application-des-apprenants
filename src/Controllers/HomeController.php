@@ -9,7 +9,7 @@ class HomeController
 
     use Reponse;
 
-    public function index(): void
+    public function connexion(): void
     {
         if (isset($_GET['erreur'])) {
             $erreur = htmlspecialchars($_GET['erreur']);
@@ -20,17 +20,17 @@ class HomeController
         $this->render("connexion", ["erreur" => $erreur]);
     }
 
-    public function connexion()
+    public function acceuil()
     {
         $this->render("accueil", ["section" => 'menu', 'action' => 'connexion']);
     }
 
-    public function inscription()
+    public function promotion()
     {
-        $this->render("accueil", ["section" => 'menu', 'action' => 'inscription']);
+        $this->render("Promotion", ["section" => 'menu', 'action' => 'inscription']);
     }
 
-    public function formulaireResa()
+    public function kaka()
     {
         $this->render("formulaireReservation", ["erreur" => '']);
     }

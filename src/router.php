@@ -1,5 +1,5 @@
 <?php
-//var_dump($_SERVER);
+// var_dump($_SERVER);
 
 use src\Controllers\HomeController;
 
@@ -10,11 +10,20 @@ $HomeController = new HomeController;
 
 switch ($url) {
     case '/':
-        $HomeController-> index();
+        $HomeController->connexion();
         break;
+
+        case '/acceuil':
+            $HomeController->acceuil();
+            break;
+
+        case '/promotions':
+                $HomeController->promotion();
+                break;
+        
     
     default:
-        # code...
+    $HomeController->page404();
         break;
 }
 
