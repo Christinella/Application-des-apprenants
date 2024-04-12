@@ -17,7 +17,7 @@ class HomeController
             $erreur = '';
         }
 
-        $this->render("accueil", ["erreur" => $erreur]);
+        $this->render("connexion", ["erreur" => $erreur]);
     }
 
     public function connexion()

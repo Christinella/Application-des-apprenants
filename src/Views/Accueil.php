@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/assets/styleAcceuil.css" rel="stylesheet">
     <title>
         Accueil </title>
 </head>
@@ -38,7 +39,7 @@
                     </p>
                 </div>
             </div>
-            <div class="px-1 py-1 bg-light rounded-1 col-xl-12 row d-flex">
+            <div class="px-1 py-1 bg-light rounded-1 col-xl-12 row d-flex" id="fond">
                 <div class="col-xl-11 row justify-content-between">
                     <div class="col-lg-1 row">
                         <p class="text-black fs-3 fw-normal font-family-Roboto col-12 m-0 px-3 py-2">
