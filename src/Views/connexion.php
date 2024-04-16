@@ -30,7 +30,7 @@ include_once __DIR__ . '/Includes/header.php';
                 </div>
             </div>
             <div>
-                <button onclick="redirigerPage() " class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Connexion</button>
+                <button id="SoumissionButton" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Connexion</button>
             </div>
         </div>
 
@@ -40,8 +40,8 @@ include_once __DIR__ . '/Includes/header.php';
     <div class="cards flex items-center flex-wrap justify-evenly">
     </div>
 
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="./script.js"></script> -->
 
     <?php
         if (!empty($_GET['erreur'])) {

@@ -9,21 +9,29 @@ $methode = $_SERVER['REQUEST_METHOD'];
 $HomeController = new HomeController;
 
 switch ($url) {
+    case '/test':
+        echo password_hash('mada', PASSWORD_DEFAULT);
+        break;
     case '/':
+        if ($methode == 'GET'){
+            $HomeController->connexion();  
+        }else {
+            $HomeController->traitementConnexion();
+        }
+            
         $HomeController->connexion();
         break;
 
-        case '/acceuil':
-            $HomeController->acceuil();
-            break;
+    case '/acceuil':
+        $HomeController->acceuil();
+        break;
 
-        case '/promotions':
-                $HomeController->promotion();
-                break;
-        
-    
+    case '/promotions':
+        $HomeController->promotion();
+        break;
+
+
     default:
-    $HomeController->page404();
+        $HomeController->page404();
         break;
 }
-

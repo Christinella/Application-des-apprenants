@@ -52,4 +52,11 @@ class HomeController
         header("HTTP/1.1 404 Not Found");
         $this->render('404');
     }
+
+    public function traitementConnexion(){
+        var_dump($_POST); 
+
+
+
+    }
 }
