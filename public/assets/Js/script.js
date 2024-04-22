@@ -1,4 +1,4 @@
-console.log('caca');
+
 const submissionButton = document.getElementById("SoumissionButton");
 const body = document.getElementById("body");
 
@@ -14,7 +14,7 @@ function SoumissionCo(event) {
 
 
   event.preventDefault();
-//   console.log("js works");
+
   console.log(inputEmail, inputPasswordValue);
 
 
