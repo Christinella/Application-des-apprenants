@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . '/Includes/header.php';
+include_once __DIR__ . '/Includes/navCo.php';
 
 ?>
 
@@ -43,30 +44,6 @@ include_once __DIR__ . '/Includes/header.php';
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="./script.js"></script> -->
 
-    <?php
-        if (!empty($_GET['erreur'])) {
-            if ($_GET['erreur'] == 4) { ?>
-                <div class="messageechec">
-                    Merci de remplir tous les champs.
-                </div>
-            <?php } else if ($_GET['erreur'] == 6) { ?>
-                <div class="messageechec">
-                    Le mail ou le mot de passe est incorrect.
-                </div>
-
-            <?php
-            } else if ($_GET['erreur'] == 7) { ?>
-                <div class="messageechec">
-                    Le mail incorrect.
-                </div>
-            <?php
-
-            } else if ($_GET['erreur'] == 8) { ?>
-                <div class="messageechec">
-                    MDP incorrect.
-                </div>
-        <?php
-            }
-        } ?>
+ 
 
  

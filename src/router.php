@@ -22,13 +22,7 @@ switch ($url) {
         $HomeController->connexion();
         break;
 
-    case '/acceuil':
-        $HomeController->acceuil();
-        break;
-
-    case '/promotions':
-        $HomeController->promotion();
-        break;
+   
 
 
     default:

@@ -14,12 +14,12 @@ function SoumissionCo(event) {
 
 
   event.preventDefault();
-  console.log("js works");
+//   console.log("js works");
   console.log(inputEmail, inputPasswordValue);
 
 
 
-  const url = "/login";
+  const url = "/";
 
   const user = {
     email: inputEmail,
@@ -33,11 +33,13 @@ function SoumissionCo(event) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(user),
-  }).then((response) => {
-    return response.text();
-  }).then((result) => {
-    body.innerHTML = ''
-    body.innerHTML = result
-    console.log(result);
-  });
+  })
+    .then((response) => {
+      return response.text();
+    })
+    .then((result) => {
+     
+    });
 }
+
+
